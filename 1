@@ -1,12 +1,14 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
-
 int main()
 {
     double a,r;
     cin>>a;
+    if ((a<=0)||(a>=360))
+    cout<<"Данные введены некорректно";
+    else {
     r=(a*3.14)/180;
     cout<<r;
+    }
     return 0;
 }
